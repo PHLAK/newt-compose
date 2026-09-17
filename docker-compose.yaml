@@ -10,6 +10,7 @@ services:
       NEWT_SECRET: ${NEWT_SECRET}
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
 
   watchtower:
